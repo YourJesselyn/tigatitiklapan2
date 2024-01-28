@@ -435,7 +435,7 @@
 							android:layout_marginLeft="25dp"
 							android:id="@+id/statusText"
 							android:textColor="#FFFFFFFF"/>
-						<status>kontol.</status>status>
+						<status>kontol.</status>
 
 					</LinearLayout>
 
