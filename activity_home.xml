@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#000000">
+
+	<RelativeLayout
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#000000">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/hackmenu"
+			android:visibility="visible"
+			android:gravity="top|center|center_vertical">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="45dp"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginTop="10dp"
+				android:background="@drawable/Noround">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal"
+					android:gravity="center_vertical">
+
+					<ImageView
+						android:layout_gravity="center"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/icrec"
+						android:layout_marginLeft="17dp"/>
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:textColor="#FFEBF1F1"
+							android:textSize="15sp"
+							android:text="Hide Record"
+							android:fontFamily="@font/sans"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:layout_marginLeft="10dp"/>
+
+					</LinearLayout>
+
+					<Switch
+						android:layout_width="wrap_content"
+						android:thumb="@drawable/ic_switch_off"
+						android:track="@drawable/ic_switch_on"
+						android:id="@+id/hiderec"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="25dp"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="#FF737276"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="45dp"
+				android:gravity="center_vertical"
+				android:background="@drawable/Noround">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/icon_alert_outlinejess"
+					android:layout_marginLeft="17dp"
+					android:alpha="0.8"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Use protection before start hack's !"
+					android:fontFamily="@font/sans"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textSize="15sp"
+					android:layout_centerInParent="true"
+					android:singleLine="true"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					android:scrollHorizontally="true"
+					android:textColor="#FFFDFDFD"
+					android:layout_marginLeft="10dp"
+					android:gravity="center_vertical"/>
+
+			</LinearLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="#FF737276"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="10dp"
+				android:background="@drawable/Noround">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:id="@+id/startButton"
+						android:background="@drawable/Noround2"
+						android:padding="20dp"
+						android:gravity="top|center">
+
+						<ImageView
+							android:layout_width="40dp"
+							android:src="@drawable/ic_play"
+							android:layout_height="40dp"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Start Menu"
+							android:fontFamily="@font/sans"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:textColor="#FFFFFFFF"
+							android:textSize="16sp"
+							android:layout_marginTop="10dp"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:layout_marginStart="10dp"
+						android:id="@+id/stopButton"
+						android:background="@drawable/Noround2"
+						android:padding="20dp"
+						android:gravity="top|center">
+
+						<ImageView
+							android:layout_width="40dp"
+							android:src="@drawable/ic_stop"
+							android:layout_height="40dp"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Stop Menu"
+							android:fontFamily="@font/sans"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:textColor="#FFFFFFFF"
+							android:textSize="16sp"
+							android:layout_marginTop="10dp"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="#FF737276"/>
+
+				<LinearLayout
+					android:id="@+id/fitur1"
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="45dp"
+					android:background="@drawable/Noround"
+					android:gravity="center_vertical">
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="15dp"
+						android:background="@drawable/icon_asking_outlinejess"/>
+
+					<TextView
+						android:textSize="15.0dp"
+						android:textColor="#FFE8E8E8"
+						android:gravity="center_vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="How to use"
+						android:fontFamily="@font/sans"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:textAlignment="gravity"
+						android:layout_marginLeft="10dp"
+						android:layout_weight="1.0"/>
+
+					<ImageView
+						android:id="@+id/arrow1"
+						android:layout_width="30.0dp"
+						android:layout_height="30dp"
+						android:clickable="true"
+						android:focusable="true"
+						android:foreground="?android:attr/selectableItemBackground"
+						android:visibility="visible"
+						android:tint="#FFFFFFFF"
+						android:src="@drawable/ic_expand_more_white"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"/>
+
+					<ImageView
+						android:id="@+id/arrow2"
+						android:layout_width="30.0dp"
+						android:layout_height="30dp"
+						android:clickable="true"
+						android:focusable="true"
+						android:foreground="?android:attr/selectableItemBackground"
+						android:visibility="gone"
+						android:tint="#FFFFFFFF"
+						android:src="@drawable/ic_expand_less_white"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/Noround">
+
+					<LinearLayout
+						android:id="@+id/a1"
+						android:visibility="gone"
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="7dp">
+
+						<RadioGroup
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical"
+							android:layout_marginStart="10dp"
+							android:padding="10dp">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Non-Rooted Devices :"
+								android:textAppearance="?android:attr/textAppearanceSmall"
+								android:textColor="#FF20B1FF"/>
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Please use virtual , Add PUBG and DX Loader into Virtual"
+								android:textAppearance="?android:attr/textAppearanceSmall"
+								android:textColor="#FFFFFFFF"/>
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Rooted Devices :"
+								android:textAppearance="?android:attr/textAppearanceSmall"
+								android:layout_marginTop="20dp"
+								android:textColor="#FF20B1FF"/>
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Give root permissions ,"
+								android:textAppearance="?android:attr/textAppearanceSmall"
+								android:textColor="#FFFFFFFF"
+								android:textStyle="italic"/>
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="1. Start Menu when in Lobby . Active hack in Plane or Island !"
+								android:textAppearance="?android:attr/textAppearanceSmall"
+								android:textColor="#FFFFFFFF"/>
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="2. When chicken or die , off aimbot or SDK Hacks"
+								android:textAppearance="?android:attr/textAppearanceSmall"
+								android:textColor="#FFF9F9F9"
+								android:layout_marginBottom="5dp"/>
+
+						</RadioGroup>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@drawable/Noround"
+				android:gravity="center"
+				android:layout_marginTop="10dp">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginTop="25dp">
+
+					<LinearLayout
+						xmlns:app="http://schemas.android.com/apk/res-auto"
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:gravity="center_vertical"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="15dp">
+
+						<com.airbnb.lottie.LottieAnimationView
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							app:lottie_loop="true"
+							app:lottie_autoPlay="true"
+							app:lottie_speed="2.5"
+							app:lottie_rawRes="@raw/signal"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="#FF1EBD08"
+							android:textSize="13sp"
+							android:layout_marginLeft="10dp"
+							android:text="Server Connected"
+							android:textStyle="bold"
+							android:layout_marginRight="25dp"
+							android:gravity="center"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_vertical">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="30dp"
+							android:layout_height="30dp"
+							android:layout_marginLeft="17dp"
+							android:background="@drawable/ic_shield_outline"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Protection Games"
+							android:fontFamily="@font/sans"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:textColor="#FFFFFFFF"
+							android:textSize="30sp"
+							android:textStyle="bold"
+							android:layout_marginLeft="10dp"
+							android:layout_weight="1.0"/>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="100dp"
+							android:layout_height="40dip"
+							android:layout_marginRight="25dp"
+							android:gravity="center">
+
+							<Button
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:fontFamily="@font/sans"
+								android:text="Refresh"
+								android:id="@+id/Refresh"
+								android:background="@drawable/round4progRAM"
+								android:textColor="#FFFFFFFF"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Bypass D4 Patch 59"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_marginLeft="25dp"
+							android:id="@+id/statusText"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_marginTop="20dp"
+						android:orientation="horizontal"
+						android:gravity="center_vertical"
+						android:weightSum="1"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1.0"
+							android:padding="15dp"
+							android:gravity="center_vertical"
+							android:background="@drawable/round"
+							android:id="@+id/LyGL">
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="30dp"
+								android:layout_height="30dp"
+								android:gravity="center"
+								android:background="@drawable/Oval">
+
+								<LinearLayout
+									android:orientation="horizontal"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:background="@drawable/icon_controller_jess"/>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_weight="1.0">
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:textSize="11sp"
+									android:layout_marginStart="10dp"
+									android:gravity="center_vertical"
+									android:id="@+id/TxGL"/>
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:text="Server Global"
+									android:textAppearance="?android:attr/textAppearanceLarge"
+									android:textColor="#FFFFFFFF"
+									android:textSize="16sp"
+									android:layout_marginStart="10dp"
+									android:textStyle="bold"/>
+
+							</LinearLayout>
+
+							<Switch
+								android:layout_width="wrap_content"
+								android:thumb="@drawable/ic_switch_off"
+								android:track="@drawable/ic_switch_on"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="10dp"
+								android:background="@drawable/round"
+								android:id="@+id/AGL"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#FF737276"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:gravity="center_vertical"
+						android:weightSum="1"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1.0"
+							android:padding="15dp"
+							android:gravity="center_vertical"
+							android:background="@drawable/round"
+							android:id="@+id/LyKR">
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="30dp"
+								android:layout_height="30dp"
+								android:gravity="center"
+								android:background="@drawable/Oval">
+
+								<LinearLayout
+									android:orientation="horizontal"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:background="@drawable/icon_controller_jess"/>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_weight="1.0">
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:textSize="11sp"
+									android:layout_marginStart="10dp"
+									android:gravity="center_vertical"
+									android:id="@+id/TxKR"/>
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:text="Server Korea"
+									android:textAppearance="?android:attr/textAppearanceLarge"
+									android:textColor="#FFFFFFFF"
+									android:textSize="16sp"
+									android:layout_marginStart="10dp"
+									android:textStyle="bold"/>
+
+							</LinearLayout>
+
+							<Switch
+								android:layout_width="wrap_content"
+								android:thumb="@drawable/ic_switch_off"
+								android:track="@drawable/ic_switch_on"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="10dp"
+								android:background="@drawable/round"
+								android:id="@+id/AKR"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#FF737276"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:gravity="center_vertical"
+						android:weightSum="1"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1.0"
+							android:padding="15dp"
+							android:gravity="center_vertical"
+							android:background="@drawable/round"
+							android:id="@+id/LyVN">
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="30dp"
+								android:layout_height="30dp"
+								android:background="@drawable/Oval"
+								android:gravity="center">
+
+								<LinearLayout
+									android:orientation="horizontal"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:background="@drawable/icon_controller_jess"/>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_weight="1.0">
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:textSize="11sp"
+									android:layout_marginStart="10dp"
+									android:gravity="center_vertical"
+									android:id="@+id/TxVN"/>
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:text="Server Vietnam"
+									android:textAppearance="?android:attr/textAppearanceLarge"
+									android:textColor="#FFFFFFFF"
+									android:textSize="16sp"
+									android:layout_marginStart="10dp"
+									android:textStyle="bold"/>
+
+							</LinearLayout>
+
+							<Switch
+								android:layout_width="wrap_content"
+								android:thumb="@drawable/ic_switch_off"
+								android:track="@drawable/ic_switch_on"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="10dp"
+								android:background="@drawable/round"
+								android:id="@+id/AVN"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#FF737276"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:gravity="center_vertical"
+						android:weightSum="1"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1.0"
+							android:padding="15dp"
+							android:gravity="center_vertical"
+							android:background="@drawable/round"
+							android:id="@+id/LyTW">
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="30dp"
+								android:layout_height="30dp"
+								android:gravity="center"
+								android:background="@drawable/Oval">
+
+								<LinearLayout
+									android:orientation="horizontal"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:background="@drawable/icon_controller_jess"/>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_weight="1.0">
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:textSize="11sp"
+									android:layout_marginStart="10dp"
+									android:gravity="center_vertical"
+									android:id="@+id/TxTW"/>
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:text="Server Taiwan"
+									android:textAppearance="?android:attr/textAppearanceLarge"
+									android:textColor="#FFFFFFFF"
+									android:textSize="16sp"
+									android:layout_marginStart="10dp"
+									android:textStyle="bold"/>
+
+							</LinearLayout>
+
+							<Switch
+								android:layout_width="wrap_content"
+								android:thumb="@drawable/ic_switch_off"
+								android:track="@drawable/ic_switch_on"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="10dp"
+								android:background="@drawable/round"
+								android:id="@+id/ATW"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</ScrollView>
+
